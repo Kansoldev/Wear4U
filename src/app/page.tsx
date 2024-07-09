@@ -88,7 +88,7 @@ export default function Home() {
 
           <Link
             href={"#"}
-            className="mt-[0.625rem] hidden lg:inline border-0 bg-transparent font-bold text-right no-underline text-black"
+            className="mt-[0.625rem] hidden xl:inline border-0 bg-transparent font-bold text-right no-underline text-black"
             style={{ fontFamily: "Helvetica", gridArea: "bg-6" }}
           >
             see all
@@ -238,7 +238,7 @@ export default function Home() {
 
           <Link
             href={"#"}
-            className="mt-[0.625rem] hidden lg:inline border-0 bg-transparent font-bold text-right no-underline text-black"
+            className="mt-[0.625rem] hidden xl:inline border-0 bg-transparent font-bold text-right no-underline text-black"
             style={{ fontFamily: "Helvetica", gridArea: "bg-6" }}
           >
             see all
