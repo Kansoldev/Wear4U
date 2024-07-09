@@ -185,7 +185,7 @@ body {
   color: #2f2f2f;
   width: 1177px;
   max-width: 100%;
-  margin: 50px auto 20px;
+  margin: 50px auto 0;
 }
 
 .nav__title {
