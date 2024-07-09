@@ -124,7 +124,7 @@ const Footer = () => {
         </li>
       </ul>
 
-      <div class="copyright">
+      <div className="copyright">
         <p>&copy; 2024 HNG - All rights reserved.</p>
       </div>
     </footer>
