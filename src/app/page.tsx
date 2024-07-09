@@ -95,6 +95,34 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <section className="shipping-banner">
+        <span
+          className="block w-52 p-[0.625rem] text-center rounded-[200px] text-[20px]"
+          style={{
+            backgroundColor: "rgba(247, 245, 233, 1)",
+            color: "rgba(41, 41, 41, 1)",
+          }}
+        >
+          Just launched
+        </span>
+
+        <h2 className="text-3xl sm:text-6xl lg:text-8xl xl:text-[140px] leading-snug sm:leading-none py-16">
+          Free Express Shipping
+        </h2>
+
+        <div
+          className="flex flex-col md:flex-row items-center justify-center gap-6 xl:gap-12 p-5 xl:p-[0.625rem]"
+          style={{ backgroundColor: "rgba(113, 85, 63, 0.5)" }}
+        >
+          <p>
+            Join us and get free express shipping on any orders over $100, and
+            free global shipping on orders over $200 shop
+          </p>
+
+          <button>Shop</button>
+        </div>
+      </section>
     </>
   );
 }
