@@ -276,3 +276,156 @@ svg {
   margin: 0.5rem;
   fill: rgba(0, 0, 0, 0.5);
 }
+
+/* Add to cart section */
+.shopping-cart {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: rgba(247, 245, 233, 1);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .shopping-cart {
+    padding: 30px;
+  }
+}
+
+.progressbar {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  counter-reset: step;
+}
+
+.progressbar::before,
+.progress {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 92%;
+  background-color: rgba(189, 189, 189, 1);
+  z-index: -1;
+}
+
+.progress-step {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgba(41, 41, 41, 1);
+  background-color: rgba(247, 245, 233, 1);
+  color: rgb(41, 41, 41);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-step::before {
+  counter-increment: step;
+  content: counter(step);
+}
+
+.progress-step::after {
+  content: attr(data-title);
+  position: absolute;
+  top: calc(100% + 0.4rem);
+  font-size: 0.85rem;
+  color: rgba(189, 189, 189, 1);
+}
+
+.progress-step-active {
+  border: 0;
+  background-color: rgba(167, 65, 7, 1);
+  color: #fff;
+  font-weight: 700;
+}
+
+.progress-step-active::after {
+  color: rgba(167, 65, 7, 1);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.item:nth-child(2) {
+  margin-top: 80px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.item:nth-child(3) {
+  border-top: 1px solid #e1e8ee;
+  border-bottom: 1px solid #e1e8ee;
+}
+
+.image {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0.4rem;
+}
+
+.image img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.description {
+  flex-basis: 40%;
+}
+
+.description p {
+  color: #43484d;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.description span:first-child {
+  margin-bottom: 5px;
+}
+
+.description span:last-child {
+  font-weight: 300;
+  margin-top: 8px;
+  color: #86939e;
+}
+
+.quantity {
+  border: 1px solid rgba(189, 189, 189, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  background-color: transparent;
+  width: 32px;
+  font-size: 16px;
+  color: #43484d;
+  font-weight: 300;
+  padding: 0;
+}
+
+.plus-btn,
+.minus-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
