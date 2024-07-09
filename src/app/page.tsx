@@ -86,7 +86,7 @@ export default function Home() {
       <Header />
 
       <section className="hero-area">
-        <img src="/hero-bg.jpg" alt="" />
+        <img src="/hero-bg.jpg" className="w-full object-cover" alt="" />
       </section>
 
       <section className="w-[1200px] max-w-full mx-auto mt-14">
@@ -114,7 +114,7 @@ export default function Home() {
                 product.id !== 1 ? "mt-4 xl:mt-0" : ""
               }`}
             >
-              <div className="love-icon flex justify-center items-center p-3">
+              <div className="love-icon flex justify-center items-center p-3 absolute right-5 top-5">
                 <span className="lnr lnr-heart"></span>
               </div>
 
@@ -131,7 +131,7 @@ export default function Home() {
                 <p className="font-bold mt-[0.625rem]">${product.price}</p>
               </div>
 
-              <div className="add-to-cart-icon flex justify-center items-center p-3">
+              <div className="add-to-cart-icon flex justify-center items-center p-3 absolute right-5 bottom-5">
                 <span className="lnr lnr-cart font-bold"></span>
               </div>
             </div>
@@ -163,7 +163,7 @@ export default function Home() {
               key={bestProduct.id}
               className="product text-center xl:text-left"
             >
-              <div className="love-icon flex justify-center items-center p-3 right-4">
+              <div className="love-icon flex justify-center items-center p-3 absolute right-5 top-5">
                 <span className="lnr lnr-heart"></span>
               </div>
 
@@ -248,7 +248,7 @@ export default function Home() {
                 product.id !== 1 ? "mt-4 xl:mt-0" : ""
               }`}
             >
-              <div className="love-icon flex justify-center items-center p-3">
+              <div className="love-icon flex justify-center items-center p-3 absolute right-5 top-5">
                 <span className="lnr lnr-heart"></span>
               </div>
 
@@ -265,7 +265,7 @@ export default function Home() {
                 <p className="font-bold mt-[0.625rem]">${product.price}</p>
               </div>
 
-              <div className="add-to-cart-icon flex justify-center items-center p-3">
+              <div className="add-to-cart-icon flex justify-center items-center p-3 absolute right-5 bottom-5">
                 <span className="lnr lnr-cart font-bold"></span>
               </div>
             </div>
@@ -305,7 +305,7 @@ export default function Home() {
                 product.id !== 1 ? "mt-4 xl:mt-0" : ""
               }`}
             >
-              <div className="love-icon flex justify-center items-center p-3">
+              <div className="love-icon flex justify-center items-center p-3 absolute right-5 top-5">
                 <span className="lnr lnr-heart"></span>
               </div>
 
@@ -322,7 +322,7 @@ export default function Home() {
                 <p className="font-bold mt-[0.625rem]">${product.price}</p>
               </div>
 
-              <div className="add-to-cart-icon flex justify-center items-center p-3">
+              <div className="add-to-cart-icon flex justify-center items-center p-3 absolute right-5 bottom-5">
                 <span className="lnr lnr-cart font-bold"></span>
               </div>
             </div>
