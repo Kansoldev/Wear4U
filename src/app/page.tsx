@@ -30,6 +30,57 @@ export default function Home() {
     },
   ];
 
+  const bestSellers = [
+    {
+      id: 1,
+      imgUrl: "/best-1.png",
+      name: "Tee shirt",
+      price: 19,
+    },
+    {
+      id: 2,
+      imgUrl: "/best-2.png",
+      name: "Carton Pant",
+      price: 29,
+    },
+    {
+      id: 3,
+      imgUrl: "/best-3.png",
+      name: "Burberry barrel Bag",
+      price: 1800,
+    },
+    {
+      id: 4,
+      imgUrl: "/best-4.png",
+      name: "Bomber Sweater",
+      price: 249,
+    },
+    {
+      id: 5,
+      imgUrl: "/best-4.png",
+      name: "Gucci Vanity Bag",
+      price: 2200,
+    },
+    {
+      id: 6,
+      imgUrl: "/best-4.png",
+      name: "Gilngham Short",
+      price: 80,
+    },
+    {
+      id: 7,
+      imgUrl: "/best-4.png",
+      name: "Stio Women's Colter",
+      price: 429,
+    },
+    {
+      id: 8,
+      imgUrl: "/best-4.png",
+      name: "Calvin Klein Metal Cap",
+      price: 88.5,
+    },
+  ];
+
   return (
     <>
       <Header />
@@ -93,6 +144,44 @@ export default function Home() {
           >
             see all
           </Link>
+        </div>
+      </section>
+
+      <section className="w-[1200px] max-w-full mx-auto mt-14">
+        <h2
+          className="text-center uppercase text-5xl sm:text-7xl lg:text-8xl xl:text-[166px] tracking-[-4px] font-normal"
+          style={{
+            fontFamily: "helvetica",
+          }}
+        >
+          best sellers
+        </h2>
+
+        <div className="grid justify-between gap-5 grid-cols-1 sm:grid-cols-2 min-[900px]:grid-cols-3 xl:grid-cols-4 p-3 mt-6 xl:mt-0">
+          {bestSellers.map((bestProduct) => (
+            <div className="product text-center xl:text-left">
+              <div className="love-icon flex justify-center items-center p-3 right-4">
+                <span className="lnr lnr-heart"></span>
+              </div>
+
+              <div className="product-image xl:mt-10">
+                <img
+                  src={`/best-${bestProduct.id}.png`}
+                  className="mx-auto xl:mx-0"
+                  alt=""
+                />
+              </div>
+
+              <div className="product-desc">
+                <h3 className="font-medium uppercase">{bestProduct.name}</h3>
+                <p className="font-bold mt-[0.625rem]">${bestProduct.price}</p>
+              </div>
+
+              <div className="add-to-cart-icon flex justify-center items-center p-3 absolute right-4 bottom-5">
+                <span className="lnr lnr-cart font-bold"></span>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
