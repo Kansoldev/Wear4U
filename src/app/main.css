@@ -1,3 +1,7 @@
+body {
+  background-color: rgba(247, 245, 233, 1);
+}
+
 .nav-links {
   list-style: none;
   display: flex;
