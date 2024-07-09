@@ -68,7 +68,7 @@ const Header = () => {
             </li>
 
             <li>
-              <Link href={"#"}>cart(4)</Link>
+              <Link href={"/cart"}>cart(4)</Link>
             </li>
           </ul>
         </nav>
