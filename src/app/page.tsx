@@ -151,7 +151,9 @@ export default function Home() {
               </div>
 
               <div className="add-to-cart-icon flex justify-center items-center p-3 absolute right-5 bottom-5">
-                <span className="lnr lnr-cart font-bold"></span>
+                <Link href={"/cart"}>
+                  <span className="lnr lnr-cart font-bold"></span>
+                </Link>
               </div>
             </div>
           ))}
@@ -219,7 +221,9 @@ export default function Home() {
               </div>
 
               <div className="add-to-cart-icon flex justify-center items-center p-3 absolute right-4 bottom-5">
-                <span className="lnr lnr-cart font-bold"></span>
+                <Link href={"/cart"}>
+                  <span className="lnr lnr-cart font-bold"></span>
+                </Link>
               </div>
             </div>
           ))}
@@ -323,7 +327,9 @@ export default function Home() {
               </div>
 
               <div className="add-to-cart-icon flex justify-center items-center p-3 absolute right-5 bottom-5">
-                <span className="lnr lnr-cart font-bold"></span>
+                <Link href={"/cart"}>
+                  <span className="lnr lnr-cart font-bold"></span>
+                </Link>
               </div>
             </div>
           ))}
@@ -399,7 +405,9 @@ export default function Home() {
               </div>
 
               <div className="add-to-cart-icon flex justify-center items-center p-3 absolute right-5 bottom-5">
-                <span className="lnr lnr-cart font-bold"></span>
+                <Link href={"/cart"}>
+                  <span className="lnr lnr-cart font-bold"></span>
+                </Link>
               </div>
             </div>
           ))}
