@@ -22,7 +22,11 @@ const Page = () => {
             className="progress-step progress-step-active"
             data-title="Cart"
           ></div>
-          <div className="progress-step" data-title="Shipping"></div>
+
+          <Link href={"/shipping"}>
+            <div className="progress-step" data-title="Shipping"></div>
+          </Link>
+
           <div className="progress-step" data-title="Payment"></div>
         </div>
 
