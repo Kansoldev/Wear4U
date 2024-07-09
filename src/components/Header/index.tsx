@@ -20,13 +20,21 @@ const Header = () => {
         <div className="md:hidden flex justify-around items-center">
           <span className="lnr lnr-menu text-3xl"></span>
 
-          <Link href={"#"} className="ml-12">
+          <Link href={"/"} className="ml-12">
             <Image src={"/logo.png"} alt="" width={60} height={60} />
           </Link>
 
           <span className="lnr lnr-magnifier text-xl"></span>
 
-          <span className="lnr lnr-cart text-xl"></span>
+          <div className="relative">
+            <Link href={"/cart"} className="ml-12">
+              <span className="lnr lnr-cart text-xl"></span>
+            </Link>
+
+            <span className="bg-[#A74107] text-white absolute -top-[11px] -right-[18px] rounded-full  text-sm w-5 h-5 flex justify-center">
+              4
+            </span>
+          </div>
         </div>
 
         <nav className="hidden md:flex justify-around items-center w-full py-[0.625rem]">
