@@ -128,7 +128,26 @@ export default function Home() {
 
               <div className="product-desc">
                 <h3 className="font-medium uppercase">{product.name}</h3>
-                <p className="font-bold mt-[0.625rem]">${product.price}</p>
+
+                <div className="flex justify-between gap-1 w-max my-2">
+                  <span className="px-2 p-[1px] border border-solid border-[#00000033]">
+                    S
+                  </span>
+
+                  <span className="px-2 p-[1px] border border-solid border-[#00000033]">
+                    M
+                  </span>
+
+                  <span className="px-2 p-[1px] border border-solid border-[#00000033]">
+                    L
+                  </span>
+
+                  <span className="px-2 p-[1px] border border-solid border-[#00000033]">
+                    XL
+                  </span>
+                </div>
+
+                <p className="font-bold">${product.price}</p>
               </div>
 
               <div className="add-to-cart-icon flex justify-center items-center p-3 absolute right-5 bottom-5">
@@ -177,6 +196,25 @@ export default function Home() {
 
               <div className="product-desc">
                 <h3 className="font-medium uppercase">{bestProduct.name}</h3>
+
+                <div className="flex justify-between gap-1 w-max my-2">
+                  <span className="px-2 p-[1px] border border-solid border-[#00000033]">
+                    S
+                  </span>
+
+                  <span className="px-2 p-[1px] border border-solid border-[#00000033]">
+                    M
+                  </span>
+
+                  <span className="px-2 p-[1px] border border-solid border-[#00000033]">
+                    L
+                  </span>
+
+                  <span className="px-2 p-[1px] border border-solid border-[#00000033]">
+                    XL
+                  </span>
+                </div>
+
                 <p className="font-bold mt-[0.625rem]">${bestProduct.price}</p>
               </div>
 
@@ -262,6 +300,25 @@ export default function Home() {
 
               <div className="product-desc">
                 <h3 className="font-medium uppercase">{product.name}</h3>
+
+                <div className="flex justify-between gap-1 w-max my-2">
+                  <span className="px-2 p-[1px] border border-solid border-[#00000033]">
+                    S
+                  </span>
+
+                  <span className="px-2 p-[1px] border border-solid border-[#00000033]">
+                    M
+                  </span>
+
+                  <span className="px-2 p-[1px] border border-solid border-[#00000033]">
+                    L
+                  </span>
+
+                  <span className="px-2 p-[1px] border border-solid border-[#00000033]">
+                    XL
+                  </span>
+                </div>
+
                 <p className="font-bold mt-[0.625rem]">${product.price}</p>
               </div>
 
@@ -319,6 +376,25 @@ export default function Home() {
 
               <div className="product-desc">
                 <h3 className="font-medium uppercase">{product.name}</h3>
+
+                <div className="flex justify-between gap-1 w-max my-2">
+                  <span className="px-2 p-[1px] border border-solid border-[#00000033]">
+                    S
+                  </span>
+
+                  <span className="px-2 p-[1px] border border-solid border-[#00000033]">
+                    M
+                  </span>
+
+                  <span className="px-2 p-[1px] border border-solid border-[#00000033]">
+                    L
+                  </span>
+
+                  <span className="px-2 p-[1px] border border-solid border-[#00000033]">
+                    XL
+                  </span>
+                </div>
+
                 <p className="font-bold mt-[0.625rem]">${product.price}</p>
               </div>
 
