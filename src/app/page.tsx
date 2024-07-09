@@ -159,7 +159,10 @@ export default function Home() {
 
         <div className="grid justify-between gap-5 grid-cols-1 sm:grid-cols-2 min-[900px]:grid-cols-3 xl:grid-cols-4 p-3 mt-6 xl:mt-0">
           {bestSellers.map((bestProduct) => (
-            <div className="product text-center xl:text-left">
+            <div
+              key={bestProduct.id}
+              className="product text-center xl:text-left"
+            >
               <div className="love-icon flex justify-center items-center p-3 right-4">
                 <span className="lnr lnr-heart"></span>
               </div>
