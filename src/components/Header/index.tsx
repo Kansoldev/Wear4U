@@ -4,9 +4,16 @@ import Link from "next/link";
 const Header = () => {
   return (
     <>
-      {/* Promo banner*/}
-      <div></div>
-      {/* End Promo banner */}
+      <div
+        className="py-5 text-center font-medium"
+        style={{
+          backgroundColor: "rgba(41, 41, 41)",
+          letterSpacing: ".4px",
+          color: "rgba(239, 239, 239, 1)",
+        }}
+      >
+        <p>Promo: Free shipping in every orders</p>
+      </div>
 
       <header className="p-3 bg-[#f7f5e9]">
         {/* Mobile menu */}
