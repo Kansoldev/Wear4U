@@ -129,7 +129,7 @@ export default function Home() {
               <div className="product-desc">
                 <h3 className="font-medium uppercase">{product.name}</h3>
 
-                <div className="flex justify-between gap-1 w-max my-2">
+                <div className="flex justify-between gap-1 mx-auto xl:mx-0 w-max my-2">
                   <span className="px-2 p-[1px] border border-solid border-[#00000033]">
                     S
                   </span>
@@ -178,7 +178,7 @@ export default function Home() {
           best sellers
         </h2>
 
-        <div className="grid justify-between gap-5 grid-cols-1 sm:grid-cols-2 min-[900px]:grid-cols-3 xl:grid-cols-4 p-3 mt-6 xl:mt-0">
+        <div className="grid justify-between gap-5 grid-cols-1 sm:grid-cols-2 min-[900px]:grid-cols-3 xl:grid-cols-4 p-[25px] sm:p-[13px] mt-6 xl:mt-0">
           {bestSellers.map((bestProduct) => (
             <div
               key={bestProduct.id}
@@ -191,7 +191,7 @@ export default function Home() {
               <div className="product-image mt-10">
                 <img
                   src={`/best-${bestProduct.id}.png`}
-                  className="mx-auto xl:mx-0"
+                  className="mx-auto lg:mx-0"
                   alt=""
                 />
               </div>
@@ -199,7 +199,7 @@ export default function Home() {
               <div className="product-desc">
                 <h3 className="font-medium uppercase">{bestProduct.name}</h3>
 
-                <div className="flex justify-between gap-1 w-max my-2">
+                <div className="flex justify-between gap-1 w-max my-2 mx-auto xl:mx-0">
                   <span className="px-2 p-[1px] border border-solid border-[#00000033]">
                     S
                   </span>
@@ -305,7 +305,7 @@ export default function Home() {
               <div className="product-desc">
                 <h3 className="font-medium uppercase">{product.name}</h3>
 
-                <div className="flex justify-between gap-1 w-max my-2">
+                <div className="flex justify-between gap-1 w-max my-2 mx-auto xl:mx-0">
                   <span className="px-2 p-[1px] border border-solid border-[#00000033]">
                     S
                   </span>
@@ -383,7 +383,7 @@ export default function Home() {
               <div className="product-desc">
                 <h3 className="font-medium uppercase">{product.name}</h3>
 
-                <div className="flex justify-between gap-1 w-max my-2">
+                <div className="flex justify-between gap-1 w-max my-2 mx-auto xl:mx-0">
                   <span className="px-2 p-[1px] border border-solid border-[#00000033]">
                     S
                   </span>
