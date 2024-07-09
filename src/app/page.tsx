@@ -167,7 +167,7 @@ export default function Home() {
                 <span className="lnr lnr-heart"></span>
               </div>
 
-              <div className="product-image xl:mt-10">
+              <div className="product-image mt-10">
                 <img
                   src={`/best-${bestProduct.id}.png`}
                   className="mx-auto xl:mx-0"
