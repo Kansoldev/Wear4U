@@ -150,3 +150,36 @@
   font-weight: 700;
   font-size: 1rem;
 }
+
+.madeforlinks {
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+}
+
+.madeforlinks li {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-block: 20px;
+  border-bottom: 1px solid #00000033;
+}
+
+.madeforlinks li:nth-child(9),
+.madeforlinks li:nth-child(10) {
+  border-bottom: 0;
+}
+
+.madeforlinks li a {
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.madeforlinks li a:hover {
+  text-decoration: underline;
+}
+
+.madeforlinks li a.active {
+  text-decoration: underline;
+}

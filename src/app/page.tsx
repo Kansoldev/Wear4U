@@ -245,6 +245,73 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <section className="w-[1200px] max-w-full mx-auto my-12">
+        <h2
+          className="text-center uppercase text-5xl sm:text-7xl lg:text-8xl xl:text-[164px] tracking-[-6px] font-normal"
+          style={{
+            fontFamily: "helvetica",
+          }}
+        >
+          Made for you
+        </h2>
+
+        <div className="flex flex-col md:flex-row m-3 border border-solid border-[#00000033]">
+          <div
+            className="border-r-[1px] border-solid border-[#00000033] flex-grow"
+            style={{
+              backgroundImage: "url('/made-for-you.jpg')",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "cover",
+              minHeight: "360px",
+            }}
+          ></div>
+
+          <ul className="madeforlinks sm:grid flex-grow xl:flex-grow-[2]">
+            <li>
+              <a href="#" className="active">
+                Clothing
+              </a>
+            </li>
+
+            <li>
+              <a href="#">Lounge & Sweats</a>
+            </li>
+
+            <li>
+              <a href="#">Bags</a>
+            </li>
+
+            <li>
+              <a href="#">T-Shirts</a>
+            </li>
+
+            <li>
+              <a href="#">Jackets & Outerwear</a>
+            </li>
+
+            <li>
+              <a href="#">Tops</a>
+            </li>
+
+            <li>
+              <a href="#">Knitwear</a>
+            </li>
+
+            <li>
+              <a href="#">Pants</a>
+            </li>
+
+            <li>
+              <a href="#">Denim</a>
+            </li>
+
+            <li>
+              <a href="#">Dresses & Jumpsuits</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </>
   );
 }
