@@ -13,20 +13,20 @@ export default function Home() {
     {
       id: 2,
       imgUrl: "/product-2.png",
-      name: "Leather biker jacket",
-      price: 128,
+      name: "Quiet Luxury Hoodie",
+      price: 500,
     },
     {
       id: 3,
       imgUrl: "/product-3.png",
-      name: "Leather biker jacket",
-      price: 128,
+      name: "Brown Sweater",
+      price: 126,
     },
     {
       id: 4,
       imgUrl: "/product-4.png",
-      name: "Leather biker jacket",
-      price: 128,
+      name: "Sweat shirt",
+      price: 53,
     },
   ];
 
