@@ -18,17 +18,17 @@ const Page = () => {
 
       <div className="shopping-cart">
         <div className="progressbar">
-          <div
-            className="progress-step progress-step-active"
-            data-title="Cart"
-          ></div>
-
-          <Link href={"/shipping"}>
+          <Link href={"/cart"}>
             <div
               className="progress-step progress-step-active"
-              data-title="Shipping"
+              data-title="Cart"
             ></div>
           </Link>
+
+          <div
+            className="progress-step progress-step-active"
+            data-title="Shipping"
+          ></div>
 
           <div className="progress-step" data-title="Payment"></div>
         </div>
