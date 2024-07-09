@@ -67,19 +67,31 @@ const Footer = () => {
 
           <ul className="nav__ul">
             <li>
-              <a href="#">Facebook</a>
+              <a href="#">
+                Facebook{" "}
+                <span className="inline-block lnr lnr-arrow-up rotate-45 ml-1 text-lg"></span>{" "}
+              </a>
             </li>
 
             <li>
-              <a href="#">Linkedin</a>
+              <a href="#">
+                Linkedin{" "}
+                <span className="inline-block lnr lnr-arrow-up rotate-45 ml-1 text-lg"></span>{" "}
+              </a>
             </li>
 
             <li>
-              <a href="#">Twitter</a>
+              <a href="#">
+                Twitter{" "}
+                <span className="inline-block lnr lnr-arrow-up rotate-45 ml-1 text-lg"></span>{" "}
+              </a>
             </li>
 
             <li>
-              <a href="#">Instagram</a>
+              <a href="#">
+                Instagram{" "}
+                <span className="inline-block lnr lnr-arrow-up rotate-45 ml-1 text-lg"></span>{" "}
+              </a>
             </li>
           </ul>
         </li>
@@ -111,6 +123,10 @@ const Footer = () => {
           </form>
         </li>
       </ul>
+
+      <div class="copyright">
+        <p>&copy; 2024 HNG - All rights reserved.</p>
+      </div>
     </footer>
   );
 };
