@@ -92,19 +92,12 @@
   object-position: center;
 }
 
-.love-icon {
-  width: 20px;
-  height: 20px;
-  background-color: rgba(244, 241, 241, 1);
-  border-radius: 100%;
-  position: absolute;
-  top: 20px;
-}
-
+.love-icon,
 .add-to-cart-icon {
   width: 20px;
   height: 20px;
   background-color: rgba(244, 241, 241, 1);
+  border-radius: 100%;
 }
 
 .shipping-banner {
