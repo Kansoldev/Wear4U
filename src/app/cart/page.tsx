@@ -156,13 +156,19 @@ const Page = () => {
         </div>
 
         <div className="w-full flex justify-between items-center mt-12">
-          <button className="md:w-60 py-3 px-2 text-sm md:py-[0.625rem] border border-solid border-[#a74107] bg-transparent text-[#a74107]">
+          <Link
+            href={"/cart"}
+            className="inline-block md:w-60 py-3 px-2 md:py-[0.625rem] border border-solid border-[#a74107] bg-transparent text-[#a74107] text-[13px] min-[450px]:text-base text-center"
+          >
             Continue Shopping
-          </button>
+          </Link>
 
-          <button className="md:w-60 py-3 px-2 text-sm md:py-[0.625rem] border border-solid border-[#a74107] bg-[#a74107] text-white">
-            Proceed to Checkout
-          </button>
+          <Link
+            href={"/shipping"}
+            className="md:w-60 py-3 px-2 md:py-[0.625rem] border border-solid border-[#a74107] bg-[#a74107] text-white text-[13px] min-[450px]:text-base text-center"
+          >
+            Proceed to checkout
+          </Link>
         </div>
       </div>
     </>

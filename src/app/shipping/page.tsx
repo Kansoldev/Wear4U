@@ -18,12 +18,10 @@ const Page = () => {
 
       <div className="shopping-cart">
         <div className="progressbar">
-          <Link href={"/cart"}>
-            <div
-              className="progress-step progress-step-active"
-              data-title="Cart"
-            ></div>
-          </Link>
+          <div
+            className="progress-step progress-step-active"
+            data-title="Cart"
+          ></div>
 
           <div
             className="progress-step progress-step-active"
@@ -34,6 +32,8 @@ const Page = () => {
         </div>
 
         <form action="" className="my-14">
+          <h2 className="mb-6 text-2xl font-semibold">Shipping Address</h2>
+
           <div>
             <label htmlFor="firstname" className="inline-block mb-2 text-lg">
               First name
@@ -283,13 +283,19 @@ const Page = () => {
         </div>
 
         <div className="w-full flex justify-between items-center mt-12">
-          <button className="md:w-60 py-3 px-2 text-sm md:py-[0.625rem] border border-solid border-[#a74107] bg-transparent text-[#a74107]">
-            Continue Shopping
-          </button>
+          <Link
+            href={"/cart"}
+            className="inline-block md:w-60 py-3 px-2 md:py-[0.625rem] border border-solid border-[#a74107] bg-transparent text-[#a74107] text-[13px] min-[450px]:text-base text-center"
+          >
+            Go back
+          </Link>
 
-          <button className="md:w-60 py-3 px-2 text-sm md:py-[0.625rem] border border-solid border-[#a74107] bg-[#a74107] text-white">
-            Proceed to Checkout
-          </button>
+          <Link
+            href={"/payment"}
+            className="md:w-60 py-3 px-2 md:py-[0.625rem] border border-solid border-[#a74107] bg-[#a74107] text-white text-[13px] min-[450px]:text-base text-center"
+          >
+            Proceed to payment
+          </Link>
         </div>
       </div>
     </>
