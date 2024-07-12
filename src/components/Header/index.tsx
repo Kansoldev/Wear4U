@@ -15,7 +15,7 @@ const Header = () => {
         <p>Promo: Free shipping in every orders</p>
       </div>
 
-      <header className="p-3 bg-[#f7f5e9]">
+      <header className="bg-[#f7f5e9] py-5">
         {/* Mobile menu */}
         <div className="md:hidden flex justify-around items-center">
           <span className="lnr lnr-menu text-3xl"></span>
@@ -37,7 +37,7 @@ const Header = () => {
           </div>
         </div>
 
-        <nav className="hidden md:flex justify-around items-center w-full py-[0.625rem]">
+        <nav className="hidden md:flex justify-around items-center w-full">
           <ul className="nav-links">
             <li>
               <Link href={"#"}>men</Link>
