@@ -117,7 +117,7 @@ const Header = () => {
             </Link>
 
             <span className="bg-[#A74107] text-white absolute -top-[11px] -right-[18px] rounded-full  text-sm w-5 h-5 flex justify-center">
-              4
+              0
             </span>
           </div>
         </div>
@@ -161,7 +161,7 @@ const Header = () => {
             </li>
 
             <li>
-              <Link href={"/cart"}>cart(4)</Link>
+              <Link href={"/cart"}>cart(0)</Link>
             </li>
           </ul>
         </nav>
