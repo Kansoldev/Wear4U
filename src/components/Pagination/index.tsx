@@ -36,7 +36,7 @@ const Pagination = ({
         </li>
 
         {pageNumbers.map((page) => (
-          <li>
+          <li key={page}>
             <Link
               href={"javascript:void(0)"}
               onClick={() => paginate(page)}
