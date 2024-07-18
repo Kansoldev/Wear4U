@@ -5,6 +5,7 @@ import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProductList from "@/components/ProductList";
+import Pagination from "@/components/Pagination";
 import { getAllProducts } from "@/api/product/route";
 
 export default function Home() {
@@ -15,12 +16,14 @@ export default function Home() {
   }[];
 
   const [products, setProducts] = useState<Product>([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [noOfResults] = useState(4);
 
   useEffect(() => {
     async function fetchProducts() {
       try {
         const products = await getAllProducts();
-        setProducts(products.items.slice(0, 4));
+        setProducts(products.items);
       } catch (error) {
         console.log(error);
       }
@@ -28,6 +31,32 @@ export default function Home() {
 
     fetchProducts();
   }, []);
+
+  const handlePagination = (pageNumber: number) => {
+    setCurrentPage(pageNumber);
+  };
+
+  const handlePrevPage = (pageNumber: number) => {
+    if (pageNumber > 1) {
+      setCurrentPage(pageNumber - 1);
+    }
+  };
+
+  const handleNextPage = (pageNumber: number, noOfPages: number) => {
+    if (pageNumber < noOfPages) {
+      setCurrentPage(pageNumber + 1);
+    }
+  };
+
+  /* Logic for calculating Pagination */
+  // Get ID of the last product
+  const lastProductID = currentPage * noOfResults;
+
+  // Get ID of the first product
+  const firstProductID = lastProductID - noOfResults;
+
+  // Get amount of products to show per page
+  const currentProducts = products?.slice(firstProductID, lastProductID);
 
   return (
     <>
@@ -55,7 +84,7 @@ export default function Home() {
             <img className="collection_image" src="./arrivals.jpg" alt="" />
           </div>
 
-          <ProductList products={products} />
+          <ProductList products={currentProducts} />
 
           <Link
             href={"#"}
@@ -65,6 +94,15 @@ export default function Home() {
             see all
           </Link>
         </div>
+
+        <Pagination
+          totalProducts={products.length}
+          resultsPerPage={noOfResults}
+          currentPage={currentPage}
+          paginate={handlePagination}
+          prevPage={handlePrevPage}
+          nextPage={handleNextPage}
+        />
       </section>
 
       <section className="w-[1200px] max-w-full mx-auto mt-14">
@@ -78,7 +116,7 @@ export default function Home() {
         </h2>
 
         <div className="grid justify-between gap-5 grid-cols-1 sm:grid-cols-2 min-[900px]:grid-cols-3 xl:grid-cols-4 p-[25px] sm:p-[13px] mt-6 xl:mt-0">
-          <ProductList products={products} />
+          <ProductList products={products.slice(0, 4)} />
         </div>
       </section>
 
@@ -135,7 +173,7 @@ export default function Home() {
             <img className="collection_image" src="/men.jpg" alt="" />
           </div>
 
-          <ProductList products={products} />
+          <ProductList products={products.slice(0, 4)} />
         </div>
       </section>
 
@@ -164,7 +202,7 @@ export default function Home() {
             <img className="collection_image" src="/women.jpg" alt="" />
           </div>
 
-          <ProductList products={products} />
+          <ProductList products={products.slice(0, 4)} />
 
           <Link
             href={"#"}
