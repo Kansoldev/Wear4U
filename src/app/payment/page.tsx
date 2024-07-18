@@ -80,10 +80,7 @@ const Page = () => {
             </div>
           </div>
 
-          <button
-            href={"/shipping"}
-            className="w-full py-3 px-2 md:py-[0.625rem] border border-solid border-[#a74107] bg-[#a74107] text-white text-[13px] min-[450px]:text-base text-center mt-5 "
-          >
+          <button className="w-full py-3 px-2 md:py-[0.625rem] border border-solid border-[#a74107] bg-[#a74107] text-white text-[13px] min-[450px]:text-base text-center mt-5 ">
             Pay $520 (#754,000)
           </button>
         </form>
