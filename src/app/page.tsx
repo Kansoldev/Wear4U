@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { getAllProducts } from "@/api/product/route";
 
 export default function Home() {
   type Product = {
@@ -12,20 +13,19 @@ export default function Home() {
     current_price: any[];
   }[];
 
-  const [products, setProducts] = useState<Product | null>([]);
+  const [products, setProducts] = useState<Product>([]);
 
   useEffect(() => {
-    try {
-      fetch(
-        `https://timbu-get-all-products.reavdev.workers.dev/?organization_id=732bbf6844ae44d38f267592f5fc24a8&Apikey=${process.env.NEXT_PUBLIC_TIMBU_API_KEY}&Appid=02XVAXBXJIHEHKA`
-      )
-        .then((res) => res.json())
-        .then((data) => {
-          setProducts(data.items.slice(0, 4));
-        });
-    } catch (error) {
-      console.log(error);
+    async function fetchProducts() {
+      try {
+        const products = await getAllProducts();
+        setProducts(products.items.slice(0, 4));
+      } catch (error) {
+        console.log(error);
+      }
     }
+
+    fetchProducts();
   }, []);
 
   return (
